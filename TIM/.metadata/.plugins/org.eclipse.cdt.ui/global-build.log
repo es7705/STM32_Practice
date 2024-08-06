@@ -1,0 +1,1389 @@
+02:41:20 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10440	     12	   1716	  12168	   2f88	TIM4.elf
+Finished building: default.size.stdout
+ 
+02:41:24 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10440	     12	   1716	  12168	   2f88	TIM4.elf
+Finished building: default.size.stdout
+ 
+02:42:16 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+02:42:17 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM4.elf
+ 
+arm-none-eabi-size  TIM4.elf 
+arm-none-eabi-objdump -h -S TIM4.elf  > "TIM4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10436	     12	   1716	  12164	   2f84	TIM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM4.list
+ 
+02:42:21 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10436	     12	   1716	  12164	   2f84	TIM4.elf
+Finished building: default.size.stdout
+ 
+02:42:56 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+02:42:56 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `HAL_GPIO_EXTI_Callback':
+C:/STM PROJECT/CUBEIDE/TIM/TIM4/TIM4/Debug/../Src/main.c:333: undefined reference to `sConfigOC'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: TIM4.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+02:43:19 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+02:43:19 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Src/main.c:323:17: error: 'sConfigOC' undeclared (first use in this function)
+  323 |                 sConfigOC.Pulse = 999;
+      |                 ^~~~~~~~~
+../Src/main.c:323:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+02:44:00 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+02:44:01 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM4.elf
+ 
+arm-none-eabi-size  TIM4.elf 
+arm-none-eabi-objdump -h -S TIM4.elf  > "TIM4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10444	     12	   1740	  12196	   2fa4	TIM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM4.list
+ 
+02:44:09 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10444	     12	   1740	  12196	   2fa4	TIM4.elf
+Finished building: default.size.stdout
+ 
+19:29:46 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+19:29:47 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM4.elf
+ 
+arm-none-eabi-size  TIM4.elf 
+arm-none-eabi-objdump -h -S TIM4.elf  > "TIM4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10444	     12	   1740	  12196	   2fa4	TIM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM4.list
+ 
+19:30:21 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10444	     12	   1740	  12196	   2fa4	TIM4.elf
+Finished building: default.size.stdout
+ 
+19:30:58 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+19:30:59 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `HAL_GPIO_EXTI_Callback':
+C:/STM PROJECT/CUBEIDE/TIM/TIM4/TIM4/Debug/../Src/main.c:332: undefined reference to `sConfigOC'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: TIM4.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:33:35 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+19:33:36 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM4.elf
+ 
+arm-none-eabi-size  TIM4.elf 
+arm-none-eabi-objdump -h -S TIM4.elf  > "TIM4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10444	     12	   1740	  12196	   2fa4	TIM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM4.list
+ 
+19:43:56 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+19:43:57 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM4.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM4\TIM4\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM4.elf
+ 
+arm-none-eabi-size  TIM4.elf 
+arm-none-eabi-objdump -h -S TIM4.elf  > "TIM4.list"
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM4.list
+ 
+19:44:07 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+19:55:00 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+19:55:03 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+19:55:04 **** Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103rbtx.d" -MT"Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103rbtx.o" "../Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   8308	     12	   1644	   9964	   26ec	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:11:32 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:11:34 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:11:35 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9188	     12	   1668	  10868	   2a74	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:15:45 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:15:45 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:15:46 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9324	     12	   1668	  11004	   2afc	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:15:55 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9324	     12	   1668	  11004	   2afc	TIM5.elf
+Finished building: default.size.stdout
+ 
+20:20:17 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:20:18 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:20:19 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9324	     12	   1668	  11004	   2afc	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:20:27 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9324	     12	   1668	  11004	   2afc	TIM5.elf
+Finished building: default.size.stdout
+ 
+20:22:49 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:22:50 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:22:51 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     12	   1668	  11016	   2b08	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:22:58 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9336	     12	   1668	  11016	   2b08	TIM5.elf
+Finished building: default.size.stdout
+ 
+20:24:20 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:24:21 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:24:22 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9356	     12	   1668	  11036	   2b1c	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:24:26 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9356	     12	   1668	  11036	   2b1c	TIM5.elf
+Finished building: default.size.stdout
+ 
+20:24:54 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:24:55 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:24:56 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9348	     12	   1668	  11028	   2b14	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:25:02 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9348	     12	   1668	  11028	   2b14	TIM5.elf
+Finished building: default.size.stdout
+ 
+20:34:53 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:34:55 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:34:56 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Src/main.o: in function `HAL_GPIO_EXTI_Callback':
+C:/STM PROJECT/CUBEIDE/TIM/TIM5/TIM5/Debug/../Src/main.c:322: undefined reference to `sConfigOC'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: TIM5.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:35:09 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:35:10 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:35:11 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9348	     12	   1668	  11028	   2b14	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:35:48 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:35:49 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:35:50 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9328	     12	   1668	  11008	   2b00	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:37:33 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:37:34 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:37:35 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:2:1: error: unknown type name 'TIM_OC_InitTypeDef'
+    2 | TIM_OC_InitTypeDef sConfigOC;           // ë³??ˆ˜ ? •?˜ ?•´ì¤˜ì•¼?•¨
+      | ^~~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:18:9: warning: implicit declaration of function 'HAL_Init' [-Wimplicit-function-declaration]
+   18 |         HAL_Init();
+      |         ^~~~~~~~
+../Src/main.c:25:9: warning: implicit declaration of function 'SystemClock_Config' [-Wimplicit-function-declaration]
+   25 |         SystemClock_Config();
+      |         ^~~~~~~~~~~~~~~~~~
+../Src/main.c:32:9: warning: implicit declaration of function 'MX_GPIO_Init' [-Wimplicit-function-declaration]
+   32 |         MX_GPIO_Init();
+      |         ^~~~~~~~~~~~
+../Src/main.c:33:9: warning: implicit declaration of function 'MX_TIM3_Init' [-Wimplicit-function-declaration]
+   33 |         MX_TIM3_Init();
+      |         ^~~~~~~~~~~~
+../Src/main.c:35:9: warning: implicit declaration of function 'HAL_TIM_Base_Start_IT' [-Wimplicit-function-declaration]
+   35 |         HAL_TIM_Base_Start_IT(&htim3);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:35:32: error: 'htim3' undeclared (first use in this function)
+   35 |         HAL_TIM_Base_Start_IT(&htim3);
+      |                                ^~~~~
+../Src/main.c:35:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:36:9: warning: implicit declaration of function 'HAL_TIM_OC_Start_IT' [-Wimplicit-function-declaration]
+   36 |         HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_1);
+      |         ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:36:37: error: 'TIM_CHANNEL_1' undeclared (first use in this function)
+   36 |         HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_1);
+      |                                     ^~~~~~~~~~~~~
+../Src/main.c:37:37: error: 'TIM_CHANNEL_2' undeclared (first use in this function)
+   37 |         HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_2);
+      |                                     ^~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:54:6: warning: conflicting types for 'SystemClock_Config'; have 'void(void)'
+   54 | void SystemClock_Config(void) {
+      |      ^~~~~~~~~~~~~~~~~~
+../Src/main.c:25:9: note: previous implicit declaration of 'SystemClock_Config' with type 'void(void)'
+   25 |         SystemClock_Config();
+      |         ^~~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'SystemClock_Config':
+../Src/main.c:55:9: error: unknown type name 'RCC_OscInitTypeDef'
+   55 |         RCC_OscInitTypeDef RCC_OscInitStruct = { 0 };
+      |         ^~~~~~~~~~~~~~~~~~
+../Src/main.c:56:9: error: unknown type name 'RCC_ClkInitTypeDef'
+   56 |         RCC_ClkInitTypeDef RCC_ClkInitStruct = { 0 };
+      |         ^~~~~~~~~~~~~~~~~~
+../Src/main.c:61:26: error: request for member 'OscillatorType' in something not a structure or union
+   61 |         RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+      |                          ^
+../Src/main.c:61:44: error: 'RCC_OSCILLATORTYPE_HSI' undeclared (first use in this function)
+   61 |         RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:62:26: error: request for member 'HSIState' in something not a structure or union
+   62 |         RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+      |                          ^
+../Src/main.c:62:38: error: 'RCC_HSI_ON' undeclared (first use in this function)
+   62 |         RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+      |                                      ^~~~~~~~~~
+../Src/main.c:63:26: error: request for member 'HSICalibrationValue' in something not a structure or union
+   63 |         RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+      |                          ^
+../Src/main.c:63:49: error: 'RCC_HSICALIBRATION_DEFAULT' undeclared (first use in this function)
+   63 |         RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:64:26: error: request for member 'PLL' in something not a structure or union
+   64 |         RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+      |                          ^
+../Src/main.c:64:42: error: 'RCC_PLL_ON' undeclared (first use in this function)
+   64 |         RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+      |                                          ^~~~~~~~~~
+../Src/main.c:65:26: error: request for member 'PLL' in something not a structure or union
+   65 |         RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+      |                          ^
+../Src/main.c:65:43: error: 'RCC_PLLSOURCE_HSI_DIV2' undeclared (first use in this function)
+   65 |         RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:66:26: error: request for member 'PLL' in something not a structure or union
+   66 |         RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
+      |                          ^
+../Src/main.c:66:40: error: 'RCC_PLL_MUL16' undeclared (first use in this function)
+   66 |         RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
+      |                                        ^~~~~~~~~~~~~
+../Src/main.c:67:13: warning: implicit declaration of function 'HAL_RCC_OscConfig' [-Wimplicit-function-declaration]
+   67 |         if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~~~
+../Src/main.c:67:54: error: 'HAL_OK' undeclared (first use in this function)
+   67 |         if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+      |                                                      ^~~~~~
+../Src/main.c:68:17: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   68 |                 Error_Handler();
+      |                 ^~~~~~~~~~~~~
+../Src/main.c:73:26: error: request for member 'ClockType' in something not a structure or union
+   73 |         RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                          ^
+../Src/main.c:73:39: error: 'RCC_CLOCKTYPE_HCLK' undeclared (first use in this function)
+   73 |         RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                                       ^~~~~~~~~~~~~~~~~~
+../Src/main.c:73:60: error: 'RCC_CLOCKTYPE_SYSCLK' undeclared (first use in this function)
+   73 |         RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                                                            ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:74:27: error: 'RCC_CLOCKTYPE_PCLK1' undeclared (first use in this function)
+   74 |                         | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+      |                           ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:74:49: error: 'RCC_CLOCKTYPE_PCLK2' undeclared (first use in this function)
+   74 |                         | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:75:26: error: request for member 'SYSCLKSource' in something not a structure or union
+   75 |         RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+      |                          ^
+../Src/main.c:75:42: error: 'RCC_SYSCLKSOURCE_PLLCLK' undeclared (first use in this function)
+   75 |         RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:76:26: error: request for member 'AHBCLKDivider' in something not a structure or union
+   76 |         RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+      |                          ^
+../Src/main.c:76:43: error: 'RCC_SYSCLK_DIV1' undeclared (first use in this function)
+   76 |         RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+      |                                           ^~~~~~~~~~~~~~~
+../Src/main.c:77:26: error: request for member 'APB1CLKDivider' in something not a structure or union
+   77 |         RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+      |                          ^
+../Src/main.c:77:44: error: 'RCC_HCLK_DIV2' undeclared (first use in this function)
+   77 |         RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+      |                                            ^~~~~~~~~~~~~
+../Src/main.c:78:26: error: request for member 'APB2CLKDivider' in something not a structure or union
+   78 |         RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+      |                          ^
+../Src/main.c:78:44: error: 'RCC_HCLK_DIV1' undeclared (first use in this function)
+   78 |         RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+      |                                            ^~~~~~~~~~~~~
+../Src/main.c:80:13: warning: implicit declaration of function 'HAL_RCC_ClockConfig' [-Wimplicit-function-declaration]
+   80 |         if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:80:53: error: 'FLASH_LATENCY_2' undeclared (first use in this function)
+   80 |         if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+      |                                                     ^~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:90:13: warning: conflicting types for 'MX_TIM3_Init'; have 'void(void)'
+   90 | static void MX_TIM3_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:90:13: error: static declaration of 'MX_TIM3_Init' follows non-static declaration
+../Src/main.c:33:9: note: previous implicit declaration of 'MX_TIM3_Init' with type 'void(void)'
+   33 |         MX_TIM3_Init();
+      |         ^~~~~~~~~~~~
+../Src/main.c: In function 'MX_TIM3_Init':
+../Src/main.c:96:9: error: unknown type name 'TIM_ClockConfigTypeDef'
+   96 |         TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:97:9: error: unknown type name 'TIM_MasterConfigTypeDef'
+   97 |         TIM_MasterConfigTypeDef sMasterConfig = { 0 };
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:9: error: 'htim3' undeclared (first use in this function)
+  102 |         htim3.Instance = TIM3;
+      |         ^~~~~
+../Src/main.c:102:26: error: 'TIM3' undeclared (first use in this function)
+  102 |         htim3.Instance = TIM3;
+      |                          ^~~~
+../Src/main.c:104:34: error: 'TIM_COUNTERMODE_UP' undeclared (first use in this function)
+  104 |         htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Src/main.c:106:36: error: 'TIM_CLOCKDIVISION_DIV1' undeclared (first use in this function)
+  106 |         htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:107:40: error: 'TIM_AUTORELOAD_PRELOAD_DISABLE' undeclared (first use in this function)
+  107 |         htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:108:13: warning: implicit declaration of function 'HAL_TIM_Base_Init' [-Wimplicit-function-declaration]
+  108 |         if (HAL_TIM_Base_Init(&htim3) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~~~
+../Src/main.c:108:42: error: 'HAL_OK' undeclared (first use in this function)
+  108 |         if (HAL_TIM_Base_Init(&htim3) != HAL_OK) {
+      |                                          ^~~~~~
+../Src/main.c:111:27: error: request for member 'ClockSource' in something not a structure or union
+  111 |         sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+      |                           ^
+../Src/main.c:111:42: error: 'TIM_CLOCKSOURCE_INTERNAL' undeclared (first use in this function)
+  111 |         sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:112:13: warning: implicit declaration of function 'HAL_TIM_ConfigClockSource' [-Wimplicit-function-declaration]
+  112 |         if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:115:13: warning: implicit declaration of function 'HAL_TIM_OC_Init' [-Wimplicit-function-declaration]
+  115 |         if (HAL_TIM_OC_Init(&htim3) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~
+../Src/main.c:118:22: error: request for member 'MasterOutputTrigger' in something not a structure or union
+  118 |         sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+      |                      ^
+../Src/main.c:118:45: error: 'TIM_TRGO_RESET' undeclared (first use in this function)
+  118 |         sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+      |                                             ^~~~~~~~~~~~~~
+../Src/main.c:119:22: error: request for member 'MasterSlaveMode' in something not a structure or union
+  119 |         sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+      |                      ^
+../Src/main.c:119:41: error: 'TIM_MASTERSLAVEMODE_DISABLE' undeclared (first use in this function)
+  119 |         sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:120:13: warning: implicit declaration of function 'HAL_TIMEx_MasterConfigSynchronization' [-Wimplicit-function-declaration]
+  120 |         if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:124:18: error: request for member 'OCMode' in something not a structure or union
+  124 |         sConfigOC.OCMode = TIM_OCMODE_TIMING;
+      |                  ^
+../Src/main.c:124:28: error: 'TIM_OCMODE_TIMING' undeclared (first use in this function)
+  124 |         sConfigOC.OCMode = TIM_OCMODE_TIMING;
+      |                            ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:18: error: request for member 'Pulse' in something not a structure or union
+  125 |         sConfigOC.Pulse = 9999;
+      |                  ^
+../Src/main.c:126:18: error: request for member 'OCPolarity' in something not a structure or union
+  126 |         sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+      |                  ^
+../Src/main.c:126:32: error: 'TIM_OCPOLARITY_LOW' undeclared (first use in this function)
+  126 |         sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+      |                                ^~~~~~~~~~~~~~~~~~
+../Src/main.c:127:18: error: request for member 'OCFastMode' in something not a structure or union
+  127 |         sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+      |                  ^
+../Src/main.c:127:32: error: 'TIM_OCFAST_DISABLE' undeclared (first use in this function)
+  127 |         sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~
+../Src/main.c:128:13: warning: implicit declaration of function 'HAL_TIM_OC_ConfigChannel' [-Wimplicit-function-declaration]
+  128 |         if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:128:58: error: 'TIM_CHANNEL_1' undeclared (first use in this function)
+  128 |         if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK) {
+      |                                                          ^~~~~~~~~~~~~
+../Src/main.c:131:9: warning: implicit declaration of function '__HAL_TIM_ENABLE_OCxPRELOAD' [-Wimplicit-function-declaration]
+  131 |         __HAL_TIM_ENABLE_OCxPRELOAD(&htim3, TIM_CHANNEL_1);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:132:58: error: 'TIM_CHANNEL_2' undeclared (first use in this function)
+  132 |         if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK) {
+      |                                                          ^~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:147:13: warning: conflicting types for 'MX_GPIO_Init'; have 'void(void)'
+  147 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:147:13: error: static declaration of 'MX_GPIO_Init' follows non-static declaration
+../Src/main.c:32:9: note: previous implicit declaration of 'MX_GPIO_Init' with type 'void(void)'
+   32 |         MX_GPIO_Init();
+      |         ^~~~~~~~~~~~
+../Src/main.c: In function 'MX_GPIO_Init':
+../Src/main.c:148:9: error: unknown type name 'GPIO_InitTypeDef'
+  148 |         GPIO_InitTypeDef GPIO_InitStruct = { 0 };
+      |         ^~~~~~~~~~~~~~~~
+../Src/main.c:153:9: warning: implicit declaration of function '__HAL_RCC_GPIOC_CLK_ENABLE' [-Wimplicit-function-declaration]
+  153 |         __HAL_RCC_GPIOC_CLK_ENABLE();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:154:9: warning: implicit declaration of function '__HAL_RCC_GPIOA_CLK_ENABLE' [-Wimplicit-function-declaration]
+  154 |         __HAL_RCC_GPIOA_CLK_ENABLE();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:155:9: warning: implicit declaration of function '__HAL_RCC_GPIOB_CLK_ENABLE' [-Wimplicit-function-declaration]
+  155 |         __HAL_RCC_GPIOB_CLK_ENABLE();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:158:9: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+  158 |         HAL_GPIO_WritePin(GPIOC,
+      |         ^~~~~~~~~~~~~~~~~
+../Src/main.c:158:27: error: 'GPIOC' undeclared (first use in this function)
+  158 |         HAL_GPIO_WritePin(GPIOC,
+      |                           ^~~~~
+../Src/main.c:159:25: error: 'GPIO_PIN_0' undeclared (first use in this function)
+  159 |                         GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4
+      |                         ^~~~~~~~~~
+../Src/main.c:159:38: error: 'GPIO_PIN_1' undeclared (first use in this function)
+  159 |                         GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4
+      |                                      ^~~~~~~~~~
+../Src/main.c:159:51: error: 'GPIO_PIN_2' undeclared (first use in this function)
+  159 |                         GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4
+      |                                                   ^~~~~~~~~~
+../Src/main.c:159:64: error: 'GPIO_PIN_3' undeclared (first use in this function)
+  159 |                         GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4
+      |                                                                ^~~~~~~~~~
+../Src/main.c:159:77: error: 'GPIO_PIN_4' undeclared (first use in this function)
+  159 |                         GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4
+      |                                                                             ^~~~~~~~~~
+../Src/main.c:160:43: error: 'GPIO_PIN_5' undeclared (first use in this function)
+  160 |                                         | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                           ^~~~~~~~~~
+../Src/main.c:160:56: error: 'GPIO_PIN_6' undeclared (first use in this function)
+  160 |                                         | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                        ^~~~~~~~~~
+../Src/main.c:160:69: error: 'GPIO_PIN_7' undeclared (first use in this function)
+  160 |                                         | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                                     ^~~~~~~~~~
+../Src/main.c:160:81: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+  160 |                                         | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                                                 ^~~~~~~~~~~~~~
+../Src/main.c:163:27: error: 'LD2_GPIO_Port' undeclared (first use in this function)
+  163 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                           ^~~~~~~~~~~~~
+../Src/main.c:163:42: error: 'LD2_Pin' undeclared (first use in this function)
+  163 |         HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                                          ^~~~~~~
+../Src/main.c:166:24: error: request for member 'Pin' in something not a structure or union
+  166 |         GPIO_InitStruct.Pin = B1_Pin;
+      |                        ^
+../Src/main.c:166:31: error: 'B1_Pin' undeclared (first use in this function)
+  166 |         GPIO_InitStruct.Pin = B1_Pin;
+      |                               ^~~~~~
+../Src/main.c:167:24: error: request for member 'Mode' in something not a structure or union
+  167 |         GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                        ^
+../Src/main.c:167:32: error: 'GPIO_MODE_IT_RISING' undeclared (first use in this function)
+  167 |         GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                                ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:168:24: error: request for member 'Pull' in something not a structure or union
+  168 |         GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                        ^
+../Src/main.c:168:32: error: 'GPIO_NOPULL' undeclared (first use in this function)
+  168 |         GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                                ^~~~~~~~~~~
+../Src/main.c:169:9: warning: implicit declaration of function 'HAL_GPIO_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+  169 |         HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+      |         ^~~~~~~~~~~~~
+      |         MX_GPIO_Init
+../Src/main.c:169:23: error: 'B1_GPIO_Port' undeclared (first use in this function)
+  169 |         HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+      |                       ^~~~~~~~~~~~
+../Src/main.c:173:9: warning: statement with no effect [-Wunused-value]
+  173 |         GPIO_InitStruct
+      |         ^~~~~~~~~~~~~~~
+../Src/main.c:173:24: error: expected ';' at end of input
+  173 |         GPIO_InitStruct
+      |                        ^
+      |                        ;
+../Src/main.c:173:9: error: expected declaration or statement at end of input
+  173 |         GPIO_InitStruct
+      |         ^~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:147:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  147 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:90:13: warning: 'MX_TIM3_Init' defined but not used [-Wunused-function]
+   90 | static void MX_TIM3_Init(void) {
+      |             ^~~~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:38:07 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:38:08 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:38:09 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9328	     12	   1668	  11008	   2b00	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:40:52 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:40:53 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:40:54 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:2:1: error: unknown type name 'TIM_OC_InitTypeDef'
+    2 | TIM_OC_InitTypeDef sConfigOC;  // ? „?—­ ë³??ˆ˜ë¡? ?„ ?–¸
+      | ^~~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:18:3: warning: implicit declaration of function 'HAL_Init' [-Wimplicit-function-declaration]
+   18 |   HAL_Init();
+      |   ^~~~~~~~
+../Src/main.c:25:3: warning: implicit declaration of function 'SystemClock_Config' [-Wimplicit-function-declaration]
+   25 |   SystemClock_Config();
+      |   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:32:3: warning: implicit declaration of function 'MX_GPIO_Init' [-Wimplicit-function-declaration]
+   32 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+../Src/main.c:33:3: warning: implicit declaration of function 'MX_TIM3_Init' [-Wimplicit-function-declaration]
+   33 |   MX_TIM3_Init();
+      |   ^~~~~~~~~~~~
+../Src/main.c:35:3: warning: implicit declaration of function 'HAL_TIM_Base_Start_IT' [-Wimplicit-function-declaration]
+   35 |   HAL_TIM_Base_Start_IT(&htim3);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:35:26: error: 'htim3' undeclared (first use in this function)
+   35 |   HAL_TIM_Base_Start_IT(&htim3);
+      |                          ^~~~~
+../Src/main.c:35:26: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:36:3: warning: implicit declaration of function 'HAL_TIM_OC_Start_IT' [-Wimplicit-function-declaration]
+   36 |   HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_1);
+      |   ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:36:31: error: 'TIM_CHANNEL_1' undeclared (first use in this function)
+   36 |   HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_1);
+      |                               ^~~~~~~~~~~~~
+../Src/main.c:37:31: error: 'TIM_CHANNEL_2' undeclared (first use in this function)
+   37 |   HAL_TIM_OC_Start_IT(&htim3, TIM_CHANNEL_2);
+      |                               ^~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:54:6: warning: conflicting types for 'SystemClock_Config'; have 'void(void)'
+   54 | void SystemClock_Config(void) {
+      |      ^~~~~~~~~~~~~~~~~~
+../Src/main.c:25:3: note: previous implicit declaration of 'SystemClock_Config' with type 'void(void)'
+   25 |   SystemClock_Config();
+      |   ^~~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'SystemClock_Config':
+../Src/main.c:55:3: error: unknown type name 'RCC_OscInitTypeDef'
+   55 |   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+      |   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:56:3: error: unknown type name 'RCC_ClkInitTypeDef'
+   56 |   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+      |   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:61:20: error: request for member 'OscillatorType' in something not a structure or union
+   61 |   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+      |                    ^
+../Src/main.c:61:38: error: 'RCC_OSCILLATORTYPE_HSI' undeclared (first use in this function)
+   61 |   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:62:20: error: request for member 'HSIState' in something not a structure or union
+   62 |   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+      |                    ^
+../Src/main.c:62:32: error: 'RCC_HSI_ON' undeclared (first use in this function)
+   62 |   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+      |                                ^~~~~~~~~~
+../Src/main.c:63:20: error: request for member 'HSICalibrationValue' in something not a structure or union
+   63 |   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+      |                    ^
+../Src/main.c:63:43: error: 'RCC_HSICALIBRATION_DEFAULT' undeclared (first use in this function)
+   63 |   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:64:20: error: request for member 'PLL' in something not a structure or union
+   64 |   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+      |                    ^
+../Src/main.c:64:36: error: 'RCC_PLL_ON' undeclared (first use in this function)
+   64 |   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+      |                                    ^~~~~~~~~~
+../Src/main.c:65:20: error: request for member 'PLL' in something not a structure or union
+   65 |   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+      |                    ^
+../Src/main.c:65:37: error: 'RCC_PLLSOURCE_HSI_DIV2' undeclared (first use in this function)
+   65 |   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:66:20: error: request for member 'PLL' in something not a structure or union
+   66 |   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
+      |                    ^
+../Src/main.c:66:34: error: 'RCC_PLL_MUL16' undeclared (first use in this function)
+   66 |   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
+      |                                  ^~~~~~~~~~~~~
+../Src/main.c:67:7: warning: implicit declaration of function 'HAL_RCC_OscConfig' [-Wimplicit-function-declaration]
+   67 |   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~
+../Src/main.c:67:48: error: 'HAL_OK' undeclared (first use in this function)
+   67 |   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+      |                                                ^~~~~~
+../Src/main.c:68:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   68 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+../Src/main.c:73:20: error: request for member 'ClockType' in something not a structure or union
+   73 |   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                    ^
+../Src/main.c:73:33: error: 'RCC_CLOCKTYPE_HCLK' undeclared (first use in this function)
+   73 |   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Src/main.c:73:54: error: 'RCC_CLOCKTYPE_SYSCLK' undeclared (first use in this function)
+   73 |   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+      |                                                      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:74:33: error: 'RCC_CLOCKTYPE_PCLK1' undeclared (first use in this function)
+   74 |                               | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:74:55: error: 'RCC_CLOCKTYPE_PCLK2' undeclared (first use in this function)
+   74 |                               | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:75:20: error: request for member 'SYSCLKSource' in something not a structure or union
+   75 |   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+      |                    ^
+../Src/main.c:75:36: error: 'RCC_SYSCLKSOURCE_PLLCLK' undeclared (first use in this function)
+   75 |   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:76:20: error: request for member 'AHBCLKDivider' in something not a structure or union
+   76 |   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+      |                    ^
+../Src/main.c:76:37: error: 'RCC_SYSCLK_DIV1' undeclared (first use in this function)
+   76 |   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+      |                                     ^~~~~~~~~~~~~~~
+../Src/main.c:77:20: error: request for member 'APB1CLKDivider' in something not a structure or union
+   77 |   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+      |                    ^
+../Src/main.c:77:38: error: 'RCC_HCLK_DIV2' undeclared (first use in this function)
+   77 |   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+      |                                      ^~~~~~~~~~~~~
+../Src/main.c:78:20: error: request for member 'APB2CLKDivider' in something not a structure or union
+   78 |   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+      |                    ^
+../Src/main.c:78:38: error: 'RCC_HCLK_DIV1' undeclared (first use in this function)
+   78 |   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+      |                                      ^~~~~~~~~~~~~
+../Src/main.c:80:7: warning: implicit declaration of function 'HAL_RCC_ClockConfig' [-Wimplicit-function-declaration]
+   80 |   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:80:47: error: 'FLASH_LATENCY_2' undeclared (first use in this function)
+   80 |   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
+      |                                               ^~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:90:13: warning: conflicting types for 'MX_TIM3_Init'; have 'void(void)'
+   90 | static void MX_TIM3_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:90:13: error: static declaration of 'MX_TIM3_Init' follows non-static declaration
+../Src/main.c:33:3: note: previous implicit declaration of 'MX_TIM3_Init' with type 'void(void)'
+   33 |   MX_TIM3_Init();
+      |   ^~~~~~~~~~~~
+../Src/main.c: In function 'MX_TIM3_Init':
+../Src/main.c:96:3: error: unknown type name 'TIM_ClockConfigTypeDef'
+   96 |   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:97:3: error: unknown type name 'TIM_MasterConfigTypeDef'
+   97 |   TIM_MasterConfigTypeDef sMasterConfig = {0};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:102:3: error: 'htim3' undeclared (first use in this function)
+  102 |   htim3.Instance = TIM3;
+      |   ^~~~~
+../Src/main.c:102:20: error: 'TIM3' undeclared (first use in this function)
+  102 |   htim3.Instance = TIM3;
+      |                    ^~~~
+../Src/main.c:104:28: error: 'TIM_COUNTERMODE_UP' undeclared (first use in this function)
+  104 |   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+      |                            ^~~~~~~~~~~~~~~~~~
+../Src/main.c:106:30: error: 'TIM_CLOCKDIVISION_DIV1' undeclared (first use in this function)
+  106 |   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:107:34: error: 'TIM_AUTORELOAD_PRELOAD_DISABLE' undeclared (first use in this function)
+  107 |   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:108:7: warning: implicit declaration of function 'HAL_TIM_Base_Init' [-Wimplicit-function-declaration]
+  108 |   if (HAL_TIM_Base_Init(&htim3) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~
+../Src/main.c:108:36: error: 'HAL_OK' undeclared (first use in this function)
+  108 |   if (HAL_TIM_Base_Init(&htim3) != HAL_OK) {
+      |                                    ^~~~~~
+../Src/main.c:111:21: error: request for member 'ClockSource' in something not a structure or union
+  111 |   sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+      |                     ^
+../Src/main.c:111:36: error: 'TIM_CLOCKSOURCE_INTERNAL' undeclared (first use in this function)
+  111 |   sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:112:7: warning: implicit declaration of function 'HAL_TIM_ConfigClockSource' [-Wimplicit-function-declaration]
+  112 |   if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:115:7: warning: implicit declaration of function 'HAL_TIM_OC_Init' [-Wimplicit-function-declaration]
+  115 |   if (HAL_TIM_OC_Init(&htim3) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~
+../Src/main.c:118:16: error: request for member 'MasterOutputTrigger' in something not a structure or union
+  118 |   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+      |                ^
+../Src/main.c:118:39: error: 'TIM_TRGO_RESET' undeclared (first use in this function)
+  118 |   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+      |                                       ^~~~~~~~~~~~~~
+../Src/main.c:119:16: error: request for member 'MasterSlaveMode' in something not a structure or union
+  119 |   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+      |                ^
+../Src/main.c:119:35: error: 'TIM_MASTERSLAVEMODE_DISABLE' undeclared (first use in this function)
+  119 |   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:120:7: warning: implicit declaration of function 'HAL_TIMEx_MasterConfigSynchronization' [-Wimplicit-function-declaration]
+  120 |   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:12: error: request for member 'OCMode' in something not a structure or union
+  123 |   sConfigOC.OCMode = TIM_OCMODE_TIMING;
+      |            ^
+../Src/main.c:123:22: error: 'TIM_OCMODE_TIMING' undeclared (first use in this function)
+  123 |   sConfigOC.OCMode = TIM_OCMODE_TIMING;
+      |                      ^~~~~~~~~~~~~~~~~
+../Src/main.c:124:12: error: request for member 'Pulse' in something not a structure or union
+  124 |   sConfigOC.Pulse = 9999;
+      |            ^
+../Src/main.c:125:12: error: request for member 'OCPolarity' in something not a structure or union
+  125 |   sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+      |            ^
+../Src/main.c:125:26: error: 'TIM_OCPOLARITY_LOW' undeclared (first use in this function)
+  125 |   sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+      |                          ^~~~~~~~~~~~~~~~~~
+../Src/main.c:126:12: error: request for member 'OCFastMode' in something not a structure or union
+  126 |   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+      |            ^
+../Src/main.c:126:26: error: 'TIM_OCFAST_DISABLE' undeclared (first use in this function)
+  126 |   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+      |                          ^~~~~~~~~~~~~~~~~~
+../Src/main.c:127:7: warning: implicit declaration of function 'HAL_TIM_OC_ConfigChannel' [-Wimplicit-function-declaration]
+  127 |   if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:127:52: error: 'TIM_CHANNEL_1' undeclared (first use in this function)
+  127 |   if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK) {
+      |                                                    ^~~~~~~~~~~~~
+../Src/main.c:130:3: warning: implicit declaration of function '__HAL_TIM_ENABLE_OCxPRELOAD' [-Wimplicit-function-declaration]
+  130 |   __HAL_TIM_ENABLE_OCxPRELOAD(&htim3, TIM_CHANNEL_1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:131:52: error: 'TIM_CHANNEL_2' undeclared (first use in this function)
+  131 |   if (HAL_TIM_OC_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK) {
+      |                                                    ^~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:146:13: warning: conflicting types for 'MX_GPIO_Init'; have 'void(void)'
+  146 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:146:13: error: static declaration of 'MX_GPIO_Init' follows non-static declaration
+../Src/main.c:32:3: note: previous implicit declaration of 'MX_GPIO_Init' with type 'void(void)'
+   32 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+../Src/main.c: In function 'MX_GPIO_Init':
+../Src/main.c:147:3: error: unknown type name 'GPIO_InitTypeDef'
+  147 |   GPIO_InitTypeDef GPIO_InitStruct = {0};
+      |   ^~~~~~~~~~~~~~~~
+../Src/main.c:152:3: warning: implicit declaration of function '__HAL_RCC_GPIOC_CLK_ENABLE' [-Wimplicit-function-declaration]
+  152 |   __HAL_RCC_GPIOC_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:153:3: warning: implicit declaration of function '__HAL_RCC_GPIOA_CLK_ENABLE' [-Wimplicit-function-declaration]
+  153 |   __HAL_RCC_GPIOA_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:154:3: warning: implicit declaration of function '__HAL_RCC_GPIOB_CLK_ENABLE' [-Wimplicit-function-declaration]
+  154 |   __HAL_RCC_GPIOB_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:157:3: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |   ^~~~~~~~~~~~~~~~~
+../Src/main.c:157:21: error: 'GPIOC' undeclared (first use in this function)
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                     ^~~~~
+../Src/main.c:157:28: error: 'GPIO_PIN_0' undeclared (first use in this function)
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                            ^~~~~~~~~~
+../Src/main.c:157:41: error: 'GPIO_PIN_1' undeclared (first use in this function)
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                                         ^~~~~~~~~~
+../Src/main.c:157:54: error: 'GPIO_PIN_2' undeclared (first use in this function)
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                                                      ^~~~~~~~~~
+../Src/main.c:157:67: error: 'GPIO_PIN_3' undeclared (first use in this function)
+  157 |   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                                                                   ^~~~~~~~~~
+../Src/main.c:158:27: error: 'GPIO_PIN_4' undeclared (first use in this function)
+  158 |                           GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                           ^~~~~~~~~~
+../Src/main.c:158:40: error: 'GPIO_PIN_5' undeclared (first use in this function)
+  158 |                           GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                        ^~~~~~~~~~
+../Src/main.c:158:53: error: 'GPIO_PIN_6' undeclared (first use in this function)
+  158 |                           GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                     ^~~~~~~~~~
+../Src/main.c:158:66: error: 'GPIO_PIN_7' undeclared (first use in this function)
+  158 |                           GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                                  ^~~~~~~~~~
+../Src/main.c:158:78: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+  158 |                           GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7, GPIO_PIN_RESET);
+      |                                                                              ^~~~~~~~~~~~~~
+../Src/main.c:161:21: error: 'LD2_GPIO_Port' undeclared (first use in this function)
+  161 |   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~
+../Src/main.c:161:36: error: 'LD2_Pin' undeclared (first use in this function)
+  161 |   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+      |                                    ^~~~~~~
+../Src/main.c:164:18: error: request for member 'Pin' in something not a structure or union
+  164 |   GPIO_InitStruct.Pin = B1_Pin;
+      |                  ^
+../Src/main.c:164:25: error: 'B1_Pin' undeclared (first use in this function)
+  164 |   GPIO_InitStruct.Pin = B1_Pin;
+      |                         ^~~~~~
+../Src/main.c:165:18: error: request for member 'Mode' in something not a structure or union
+  165 |   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                  ^
+../Src/main.c:165:26: error: 'GPIO_MODE_IT_RISING' undeclared (first use in this function)
+  165 |   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                          ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:166:18: error: request for member 'Pull' in something not a structure or union
+  166 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                  ^
+../Src/main.c:166:26: error: 'GPIO_NOPULL' undeclared (first use in this function)
+  166 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                          ^~~~~~~~~~~
+../Src/main.c:167:3: warning: implicit declaration of function 'HAL_GPIO_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+  167 |   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+      |   ^~~~~~~~~~~~~
+      |   MX_GPIO_Init
+../Src/main.c:167:17: error: 'B1_GPIO_Port' undeclared (first use in this function)
+  167 |   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+      |                 ^~~~~~~~~~~~
+../Src/main.c:171:18: error: request for member 'Pin' in something not a structure or union
+  171 |   GPIO_InitStruct.Pin = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 |
+      |                  ^
+../Src/main.c:173:18: error: request for member 'Mode' in something not a structure or union
+  173 |   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+      |                  ^
+../Src/main.c:173:26: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function)
+  173 |   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+      |                          ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:174:18: error: request for member 'Pull' in something not a structure or union
+  174 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                  ^
+../Src/main.c:175:18: error: request for member 'Speed' in something not a structure or union
+  175 |   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                  ^
+../Src/main.c:175:27: error: 'GPIO_SPEED_FREQ_LOW' undeclared (first use in this function)
+  175 |   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                           ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:179:18: error: request for member 'Pin' in something not a structure or union
+  179 |   GPIO_InitStruct.Pin = LD2_Pin;
+      |                  ^
+../Src/main.c:180:18: error: request for member 'Mode' in something not a structure or union
+  180 |   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+      |                  ^
+../Src/main.c:181:18: error: request for member 'Pull' in something not a structure or union
+  181 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                  ^
+../Src/main.c:182:18: error: request for member 'Speed' in something not a structure or union
+  182 |   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                  ^
+../Src/main.c:186:18: error: request for member 'Pin' in something not a structure or union
+  186 |   GPIO_InitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_4 | GPIO_PIN_5;
+      |                  ^
+../Src/main.c:186:25: error: 'GPIO_PIN_10' undeclared (first use in this function)
+  186 |   GPIO_InitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_4 | GPIO_PIN_5;
+      |                         ^~~~~~~~~~~
+../Src/main.c:187:18: error: request for member 'Mode' in something not a structure or union
+  187 |   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                  ^
+../Src/main.c:188:18: error: request for member 'Pull' in something not a structure or union
+  188 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                  ^
+../Src/main.c:189:17: error: 'GPIOB' undeclared (first use in this function)
+  189 |   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+      |                 ^~~~~
+../Src/main.c:192:18: error: request for member 'Pin' in something not a structure or union
+  192 |   GPIO_InitStruct.Pin = GPIO_PIN_8;
+      |                  ^
+../Src/main.c:192:25: error: 'GPIO_PIN_8' undeclared (first use in this function)
+  192 |   GPIO_InitStruct.Pin = GPIO_PIN_8;
+      |                         ^~~~~~~~~~
+../Src/main.c:193:18: error: request for member 'Mode' in something not a structure or union
+  193 |   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+      |                  ^
+../Src/main.c:194:18: error: request for member 'Pull' in something not a structure or union
+  194 |   GPIO_InitStruct.Pull = GPIO_NOPULL;
+      |                  ^
+../Src/main.c:195:17: error: 'GPIOA' undeclared (first use in this function)
+  195 |   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+      |                 ^~~~~
+../Src/main.c:198:3: warning: implicit declaration of function 'HAL_NVIC_SetPriority' [-Wimplicit-function-declaration]
+  198 |   HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+      |   ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:198:24: error: 'EXTI4_IRQn' undeclared (first use in this function)
+  198 |   HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+      |                        ^~~~~~~~~~
+../Src/main.c:199:3: warning: implicit declaration of function 'HAL_NVIC_EnableIRQ' [-Wimplicit-function-declaration]
+  199 |   HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+      |   ^~~~~~~~~~~~~~~~~~
+../Src/main.c:201:24: error: 'EXTI9_5_IRQn' undeclared (first use in this function)
+  201 |   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+      |                        ^~~~~~~~~~~~
+../Src/main.c:204:24: error: 'EXTI15_10_IRQn' undeclared (first use in this function)
+  204 |   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+      |                        ^~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:212:36: error: unknown type name 'TIM_HandleTypeDef'
+  212 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |                                    ^~~~~~~~~~~~~~~~~
+../Src/main.c:217:38: error: unknown type name 'TIM_HandleTypeDef'
+  217 | void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim) {
+      |                                      ^~~~~~~~~~~~~~~~~
+../Src/main.c:228:29: error: unknown type name 'uint16_t'
+  228 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      |                             ^~~~~~~~
+../Src/main.c:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /* USER CODE BEGIN 0 */
+../Src/main.c:263:6: warning: conflicting types for 'Error_Handler'; have 'void(void)'
+  263 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Src/main.c:68:5: note: previous implicit declaration of 'Error_Handler' with type 'void(void)'
+   68 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+../Src/main.c: In function 'Error_Handler':
+../Src/main.c:266:3: warning: implicit declaration of function '__disable_irq' [-Wimplicit-function-declaration]
+  266 |   __disable_irq();
+      |   ^~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:146:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  146 | static void MX_GPIO_Init(void) {
+      |             ^~~~~~~~~~~~
+../Src/main.c:90:13: warning: 'MX_TIM3_Init' defined but not used [-Wunused-function]
+   90 | static void MX_TIM3_Init(void) {
+      |             ^~~~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:43:58 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+20:43:59 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:43:59 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "TIM5.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\TIM\TIM5\TIM5\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIM5.elf
+ 
+arm-none-eabi-size  TIM5.elf 
+arm-none-eabi-objdump -h -S TIM5.elf  > "TIM5.list"
+   text	   data	    bss	    dec	    hex	filename
+   9328	     12	   1668	  11008	   2b00	TIM5.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIM5.list
+ 
+20:44:05 **** Incremental Build of configuration Debug for project TIM4 ****
+make -j4 all 
+arm-none-eabi-size  TIM4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9936	     12	   1740	  11688	   2da8	TIM4.elf
+Finished building: default.size.stdout
+ 
+20:44:24 **** Incremental Build of configuration Debug for project TIM5 ****
+make -j4 all 
+arm-none-eabi-size  TIM5.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9328	     12	   1668	  11008	   2b00	TIM5.elf
+Finished building: default.size.stdout
+ 

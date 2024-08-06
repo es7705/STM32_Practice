@@ -1,0 +1,25 @@
+!SESSION 2024-07-06 23:23:58.011 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\STM PROJECT\CUBEIDE\TIM\TIM1\TIM1\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\STM PROJECT\CUBEIDE\TIM\TIM1\TIM1\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-06 23:24:43.996
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-06 23:24:44.011
+!MESSAGE Log4j2 initialized with config file C:\STM PROJECT\CUBEIDE\TIM\TIM1\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-06 23:24:54.332
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-06 23:25:09.757
+!MESSAGE Indexed 'TIM1' (19 sources, 106 headers) in 10.8 sec: 8,720 declarations; 41,138 references; 6 unresolved inclusions; 804 syntax errors; 2,308 unresolved names (4.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-07 00:12:07.164
+!MESSAGE Indexed 'TIM2' (20 sources, 79 headers) in 4.82 sec: 4,136 declarations; 17,899 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-07 00:48:03.261
+!MESSAGE Indexed 'TIM3' (20 sources, 79 headers) in 4.28 sec: 4,136 declarations; 17,899 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)

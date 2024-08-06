@@ -1,0 +1,10 @@
+02:24:18 **** Incremental Build of configuration Debug for project LwIP_HTTP_Server_Netconn_RTOS ****
+make -j4 all 
+arm-none-eabi-size  LwIP_HTTP_Server_Netconn_RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 159660	    164	  70812	 230636	  384ec	LwIP_HTTP_Server_Netconn_RTOS.elf
+Finished building: default.size.stdout
+ 
+
+02:24:19 Build Finished. 0 errors, 0 warnings. (took 1s.465ms)
+

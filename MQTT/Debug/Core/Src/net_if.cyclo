@@ -1,0 +1,8 @@
+../Core/Src/net_if.c:25:6:csEnable	1
+../Core/Src/net_if.c:30:6:csDisable	1
+../Core/Src/net_if.c:35:6:spiWriteByte	1
+../Core/Src/net_if.c:41:9:spiReadByte	1
+../Core/Src/net_if.c:49:6:Wizchip_Init	4
+../Core/Src/net_if.c:79:6:Callback_IPAssigned	1
+../Core/Src/net_if.c:84:6:Callback_IPConflict	1
+../Core/Src/net_if.c:88:6:Network_Init	11

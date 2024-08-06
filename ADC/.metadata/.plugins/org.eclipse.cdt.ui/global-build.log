@@ -1,0 +1,217 @@
+23:45:56 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8172	    104	   1976	  10252	   280c	ADC1.elf
+Finished building: default.size.stdout
+ 
+23:46:01 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8172	    104	   1976	  10252	   280c	ADC1.elf
+Finished building: default.size.stdout
+ 
+23:46:40 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8172	    104	   1976	  10252	   280c	ADC1.elf
+Finished building: default.size.stdout
+ 
+23:48:25 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8172	    104	   1976	  10252	   280c	ADC1.elf
+Finished building: default.size.stdout
+ 
+15:07:19 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:56:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   56 |         HAL_UART_Transmit(&huart2, ch, 1, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ADC1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\ADC\ADC1\ADC1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC1.elf
+ 
+arm-none-eabi-size  ADC1.elf 
+arm-none-eabi-objdump -h -S ADC1.elf  > "ADC1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8640	    104	   1976	  10720	   29e0	ADC1.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC1.list
+ 
+15:07:39 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:56:40: error: 'le' undeclared (first use in this function); did you mean 'len'?
+   56 |         HAL_UART_Transmit(&huart2, ch, le=n, 0xFFFF);
+      |                                        ^~
+      |                                        len
+../Src/main.c:56:40: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:56:43: error: 'n' undeclared (first use in this function)
+   56 |         HAL_UART_Transmit(&huart2, ch, le=n, 0xFFFF);
+      |                                           ^
+../Src/main.c:56:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   56 |         HAL_UART_Transmit(&huart2, ch, le=n, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:07:43 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:56:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   56 |         HAL_UART_Transmit(&huart2, ch, len, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ADC1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\ADC\ADC1\ADC1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC1.elf
+ 
+arm-none-eabi-size  ADC1.elf 
+arm-none-eabi-objdump -h -S ADC1.elf  > "ADC1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8644	    104	   1976	  10724	   29e4	ADC1.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC1.list
+ 
+15:07:55 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8644	    104	   1976	  10724	   29e4	ADC1.elf
+Finished building: default.size.stdout
+ 
+15:16:40 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:58:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   58 |         HAL_UART_Transmit(&huart2, ch, len, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ADC1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\ADC\ADC1\ADC1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC1.elf
+ 
+arm-none-eabi-size  ADC1.elf 
+arm-none-eabi-objdump -h -S ADC1.elf  > "ADC1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8804	    136	   1976	  10916	   2aa4	ADC1.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC1.list
+ 
+15:16:59 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8804	    136	   1976	  10916	   2aa4	ADC1.elf
+Finished building: default.size.stdout
+ 
+15:17:24 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:58:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   58 |         HAL_UART_Transmit(&huart2, ch, len, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ADC1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\ADC\ADC1\ADC1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC1.elf
+ 
+arm-none-eabi-size  ADC1.elf 
+arm-none-eabi-objdump -h -S ADC1.elf  > "ADC1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8816	    136	   1976	  10928	   2ab0	ADC1.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC1.list
+ 
+15:17:35 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8816	    136	   1976	  10928	   2ab0	ADC1.elf
+Finished building: default.size.stdout
+ 
+15:18:38 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function '_write':
+../Src/main.c:58:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   58 |         HAL_UART_Transmit(&huart2, ch, len, 0xFFFF);
+      |                                    ^~
+      |                                    |
+      |                                    char *
+In file included from ../Inc/stm32f1xx_hal_conf.h:338,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Inc/main.h:30,
+                 from ../Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:749:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ADC1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\ADC\ADC1\ADC1\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC1.elf
+ 
+arm-none-eabi-size  ADC1.elf 
+arm-none-eabi-objdump -h -S ADC1.elf  > "ADC1.list"
+   text	   data	    bss	    dec	    hex	filename
+   8748	    136	   1976	  10860	   2a6c	ADC1.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC1.list
+ 
+15:18:43 **** Incremental Build of configuration Debug for project ADC1 ****
+make -j4 all 
+arm-none-eabi-size  ADC1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8748	    136	   1976	  10860	   2a6c	ADC1.elf
+Finished building: default.size.stdout
+ 

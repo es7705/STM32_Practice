@@ -1,0 +1,21 @@
+15:54:55 **** Incremental Build of configuration Debug for project INT2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "INT2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\STM PROJECT\CUBEIDE\INT\INT2\INT2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="INT2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: INT2.elf
+ 
+arm-none-eabi-size  INT2.elf 
+arm-none-eabi-objdump -h -S INT2.elf  > "INT2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5188	     12	   1580	   6780	   1a7c	INT2.elf
+Finished building: default.size.stdout
+ 
+Finished building: INT2.list
+ 
+15:55:07 **** Incremental Build of configuration Debug for project INT2 ****
+make -j4 all 
+arm-none-eabi-size  INT2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5188	     12	   1580	   6780	   1a7c	INT2.elf
+Finished building: default.size.stdout
+ 

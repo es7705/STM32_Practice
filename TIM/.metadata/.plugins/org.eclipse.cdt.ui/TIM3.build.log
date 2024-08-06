@@ -1,0 +1,10 @@
+20:43:58 **** Incremental Build of configuration Debug for project TIM3 ****
+make -j4 all 
+arm-none-eabi-size  TIM3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8980	     12	   1644	  10636	   298c	TIM3.elf
+Finished building: default.size.stdout
+ 
+
+20:43:58 Build Finished. 0 errors, 0 warnings. (took 650ms)
+

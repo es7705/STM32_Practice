@@ -1,0 +1,10 @@
+15:49:50 **** Incremental Build of configuration Debug for project INT4 ****
+make -j4 all 
+arm-none-eabi-size  INT4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5184	     12	   1572	   6768	   1a70	INT4.elf
+Finished building: default.size.stdout
+ 
+
+15:49:51 Build Finished. 0 errors, 0 warnings. (took 654ms)
+

@@ -1,0 +1,10 @@
+15:49:49 **** Incremental Build of configuration Debug for project INT3 ****
+make -j4 all 
+arm-none-eabi-size  INT3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5300	     12	   1588	   6900	   1af4	INT3.elf
+Finished building: default.size.stdout
+ 
+
+15:49:50 Build Finished. 0 errors, 0 warnings. (took 839ms)
+
